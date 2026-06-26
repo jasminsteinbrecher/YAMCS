@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2025 (x64) (https://www.altova.com) by TAAME Ilyasse (TUM) -->
+<SpaceSystem name="EnviornementalDATA" xmlns="http://www.omg.org/spec/XTCE/20180204" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.omg.org/spec/XTCE/20180204 https://www.omg.org/spec/XTCE/20180204/SpaceSystem.xsd">
+	<TelemetryMetaData>
+		<ParameterTypeSet>
+			<AggregateParameterType name="CCSDS_Packet_ID_Type">
+				<MemberList>
+					<Member name="Version" typeRef="CCSDS_Version_Type"/>
+					<Member name="Type" typeRef="CCSDS_Type_Type"/>
+					<Member name="SecHdrFlag" typeRef="CCSDS_Sec_Hdr_Flag_Type"/>
+					<Member name="APID" typeRef="CCSDS_APID_Type"/>
+				</MemberList>
+			</AggregateParameterType>
+			<IntegerParameterType name="CCSDS_Version_Type" signed="false">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="3"/>
+			</IntegerParameterType>
+			<BooleanParameterType name="CCSDS_Type_Type" zeroStringValue="TM" oneStringValue="TC">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="1"/>
+			</BooleanParameterType>
+			<BooleanParameterType name="CCSDS_Sec_Hdr_Flag_Type" zeroStringValue="NotPresent" oneStringValue="Present">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="1"/>
+			</BooleanParameterType>
+			<IntegerParameterType name="CCSDS_APID_Type" signed="false">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="11"/>
+			</IntegerParameterType>
+			<AggregateParameterType name="CCSDS_Packet_Sequence_Type">
+				<MemberList>
+					<Member name="GroupFlags" typeRef="CCSDS_Group_Flags_Type"/>
+					<Member name="Count" typeRef="CCSDS_Source_Sequence_Count_Type"/>
+				</MemberList>
+			</AggregateParameterType>
+			<EnumeratedParameterType name="CCSDS_Group_Flags_Type">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="2"/>
+				<EnumerationList>
+					<Enumeration value="0" label="Continuation"/>
+					<Enumeration value="1" label="First"/>
+					<Enumeration value="2" label="Last"/>
+					<Enumeration value="3" label="Standalone"/>
+				</EnumerationList>
+			</EnumeratedParameterType>
+			<IntegerParameterType name="CCSDS_Source_Sequence_Count_Type" signed="false">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="14"/>
+			</IntegerParameterType>
+			<IntegerParameterType name="CCSDS_Packet_Length_Type" signed="false" initialValue="0">
+				<UnitSet>
+					<Unit description="Size">Octets</Unit>
+				</UnitSet>
+				<IntegerDataEncoding sizeInBits="16"/>
+			</IntegerParameterType>
+			<IntegerParameterType name="uint32_t" signed="false">
+				<UnitSet/>
+				<IntegerDataEncoding encoding="unsigned" sizeInBits="32"/>
+			</IntegerParameterType>
+			<IntegerParameterType name="uint32_t_ES" signed="false">
+				<UnitSet/>
+				<IntegerDataEncoding encoding="unsigned" sizeInBits="32"/>
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="20" maxInclusive="50"/>
+						<CriticalRange minInclusive="30" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>
+			</IntegerParameterType>
+			<FloatParameterType name="float_t">
+				<UnitSet/>
+				<FloatDataEncoding sizeInBits="32"/>
+			</FloatParameterType>
+			<FloatParameterType name="float_t_CO2">
+				<UnitSet>
+					<Unit description="Size">ppm</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32"/>
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="400" maxInclusive="1000"/>
+						<CriticalRange minInclusive="200" maxInclusive="1200"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>
+			</FloatParameterType>
+			<FloatParameterType name="float_t_Hum">
+				<UnitSet>
+					<Unit description="Size">%</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32"/>
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="30" maxInclusive="60"/>
+						<CriticalRange minInclusive="20" maxInclusive="70"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>
+			</FloatParameterType>
+			<FloatParameterType name="float_t_Temp">
+				<UnitSet>
+					<Unit description="Size">°C</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32"/>
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="18" maxInclusive="25"/>
+						<CriticalRange minInclusive="15" maxInclusive="30"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>
+			</FloatParameterType>
+			<FloatParameterType name="float_t_Pres">
+				<UnitSet>
+					<Unit description="Size">hPa</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32"/>
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="980" maxInclusive="1050"/>
+						<CriticalRange minInclusive="950" maxInclusive="1080"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>
+			</FloatParameterType>
+			<FloatParameterType name="float_t_amm">
+				<UnitSet>
+					<Unit description="Size">ppm</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32"/>
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="0" maxInclusive="5"/>
+						<CriticalRange minInclusive="0" maxInclusive="7"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>
+			</FloatParameterType>
+			<FloatParameterType name="float_t_qual">
+				<UnitSet>
+					<Unit description="Size">AQI</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32"/>
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="0" maxInclusive="50"/>
+						<CriticalRange minInclusive="0" maxInclusive="70"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>
+			</FloatParameterType>
+			<StringParameterType name="EncryptedData">
+				<StringDataEncoding encoding="UTF-8">
+					<SizeInBits>
+						<Fixed>
+							<FixedValue>2752</FixedValue>
+						</Fixed>
+					</SizeInBits>
+				</StringDataEncoding>
+			</StringParameterType>
+			<BooleanParameterType name="bool_t">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="8"/>
+			</BooleanParameterType>
+			<AggregateParameterType name="vec3_t">
+				<MemberList>
+					<Member name="x" typeRef="float_t"/>
+					<Member name="y" typeRef="float_t"/>
+					<Member name="z" typeRef="float_t"/>
+				</MemberList>
+			</AggregateParameterType>
+			<EnumeratedParameterType name="EnumerationTest">
+				<UnitSet/>
+				<IntegerDataEncoding sizeInBits="3"/>
+				<EnumerationList>
+					<Enumeration value="0" label="Pressurized"/>
+					<Enumeration value="1" label="Depressurized "/>
+				</EnumerationList>
+			</EnumeratedParameterType>
+		</ParameterTypeSet>
+		<ParameterSet>
+			<Parameter name="CCSDS_Packet_ID" parameterTypeRef="CCSDS_Packet_ID_Type"/>
+			<Parameter name="CCSDS_Packet_Sequence" parameterTypeRef="CCSDS_Packet_Sequence_Type"/>
+			<Parameter name="CCSDS_Packet_Length" parameterTypeRef="CCSDS_Packet_Length_Type"/>
+			<Parameter name="CO2_level" parameterTypeRef="float_t_CO2"/>
+			<Parameter name="Humidity_Level" parameterTypeRef="float_t_Hum"/>
+			<Parameter name="Temperature" parameterTypeRef="float_t_Temp"/>
+			<Parameter name="Airlock_Pressure" parameterTypeRef="float_t_Pres"/>
+			<Parameter name="Cabin_Pressure" parameterTypeRef="float_t_Pres"/>
+			<Parameter name="Ammonia_Level" parameterTypeRef="float_t_amm"/>
+			<Parameter name="Air_Quality" parameterTypeRef="float_t_qual"/>
+			<Parameter name="Airlock_State" parameterTypeRef="EnumerationTest"/>
+		</ParameterSet>
+		<ContainerSet>
+			<SequenceContainer abstract="true" name="CCSDSPacket">
+				<EntryList>
+					<ParameterRefEntry parameterRef="CCSDS_Packet_ID"/>
+					<ParameterRefEntry parameterRef="CCSDS_Packet_Sequence"/>
+					<ParameterRefEntry parameterRef="CCSDS_Packet_Length"/>
+				</EntryList>
+			</SequenceContainer>
+			<SequenceContainer name="TelemetryPacket">
+				<EntryList/>
+				<BaseContainer containerRef="CCSDSPacket">
+					<RestrictionCriteria>
+						<ComparisonList>
+							<Comparison value="0" parameterRef="CCSDS_Packet_ID/Version"/>
+							<Comparison value="TM" parameterRef="CCSDS_Packet_ID/Type"/>
+						</ComparisonList>
+					</RestrictionCriteria>
+				</BaseContainer>
+			</SequenceContainer>
+			<SequenceContainer name="ENV">
+				<EntryList>
+					<ParameterRefEntry parameterRef="CO2_level"/>
+					<ParameterRefEntry parameterRef="Humidity_Level"/>
+					<ParameterRefEntry parameterRef="Temperature"/>
+					<ParameterRefEntry parameterRef="Airlock_Pressure"/>
+					<ParameterRefEntry parameterRef="Cabin_Pressure"/>
+					<ParameterRefEntry parameterRef="Ammonia_Level"/>
+					<ParameterRefEntry parameterRef="Air_Quality"/>
+					<ParameterRefEntry parameterRef="Airlock_State"/>
+				</EntryList>
+				<BaseContainer containerRef="TelemetryPacket">
+					<RestrictionCriteria>
+						<ComparisonList>
+							<Comparison value="NotPresent" parameterRef="CCSDS_Packet_ID/SecHdrFlag"/>
+							<Comparison value="100" parameterRef="CCSDS_Packet_ID/APID"/>
+						</ComparisonList>
+					</RestrictionCriteria>
+				</BaseContainer>
+			</SequenceContainer>
+		</ContainerSet>
+	</TelemetryMetaData>
+</SpaceSystem>

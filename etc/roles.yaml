@@ -1,0 +1,250 @@
+Operator:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  Command: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Medical"]
+  System:
+    - ControlProcessor
+    - ModifyCommandHistory
+    - ControlCommandQueue
+    - GetMissionDatabase
+    - ReadAlarms
+    - ControlAlarms
+    - GetMissionDatabase
+    - ReadActivities
+    - ControlActivities
+    - ControlArchiving
+    - ReadLinks
+    - ControlLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+    - ControlTimeline
+    
+Flight:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  Command: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA"]
+  System:
+    - ModifyCommandHistory
+    - ControlCommandQueue
+    - GetMissionDatabase
+    - ReadAlarms
+    - ControlAlarms
+    - GetMissionDatabase
+    - ReadActivities
+    - ControlActivities
+    - ReadLinks
+    - ControlLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+    - ControlTimeline
+    
+Capcom:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+    
+FAO:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+    - ControlTimeline
+
+BME:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA1","Medical-AA2","Medical-AA3","Medical-AA4","Medical-AA5","Medical-AA6","Medical-AA7","Medical-AA8","Medical-AA9"]
+  System:
+    - ReadAlarms
+    - ControlAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+SO:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  Command: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays"]
+  System:
+    - ReadAlarms
+    - ControlAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA1:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA1"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA2:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA2"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA3:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA3"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA4:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA4"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA5:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA5"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA6:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA6"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA7:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA7"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA8:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA8"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+AA9:
+  ReadParameter: [".*"]
+  WriteParameter: []
+  ReadPacket: [".*"]
+  CommandHistory: [".*"]
+  ManageBucket: ["Operations","Experiments","Issues","Reports","EVA","displays","Medical-AA9"]
+  System:
+    - ReadAlarms
+    - ReadActivities
+    - ReadLinks
+    - ManageParameterLists
+    - ReadEvents
+    - WriteEvents
+    - ReadTimeline
+
+

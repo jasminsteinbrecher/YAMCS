@@ -1,0 +1,1 @@
+import{A as r,B as a,lg as i,y as c}from"./chunk-SAZ6MTOG.js";var p=()=>a(e).canActivate(),e=class t{constructor(o){this.yamcsService=o}canActivate(){return this.yamcsService.clearContext(),!0}static{this.\u0275fac=function(n){return new(n||t)(r(i))}}static{this.\u0275prov=c({token:t,factory:t.\u0275fac,providedIn:"root"})}};export{p as a};

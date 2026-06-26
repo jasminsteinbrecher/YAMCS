@@ -1,0 +1,41 @@
+Admin:
+ displayName: "ADMINISTRATOR"
+ password: Admin
+ roles: [Operator]
+
+MCCC-FLIGHT:
+ displayName: "FLIGHT"
+ password: MCC-FLIGHT-2026
+ roles: [Flight]
+
+MCC-CAPCOM:
+ displayName: "CAPCOM"
+ password: MCC-CAPCOM-2026
+ roles: [Capcom]
+
+PRO-MCC:
+ displayName: "PRO"
+ password: MCC-PRO-2026
+ roles: [FAO]
+
+MCC-SCIENCE:
+ displayName: "SCIENCEC"
+ password: MCC-SCIENCE-2026
+ roles: [FAO]
+
+MCC-BME:
+ displayName: "BME"
+ password: MCC-BME-2026
+ roles: [BME]
+
+MCC-EVA:
+ displayName: "EVA"
+ password: MCC-EVA-2026
+ roles: [FAO]
+
+MCC-CONTACT:
+ displayName: "CONTACT"
+ password: MCC-CONTACT-2026
+ roles: [Capcom]
+
+ 

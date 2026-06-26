@@ -1,0 +1,79 @@
+services:
+  - class: org.yamcs.http.HttpServer
+    args:
+      port: 8090
+      address: "0.0.0.0"
+      cors:
+        allowOrigin: "*"
+        allowCredentials: false
+
+# This is where Yamcs will persist its data. Paths are resolved relative to where Yamcs is running
+# from (by default: target/yamcs). This means that `mvn clean` will remove also persisted data.
+# Change this property to an absolute path in case you want to persist your data.
+dataDir: yamcs-data
+
+instances:
+  - MCC
+
+# Secret key unique to a particular Yamcs installation.
+# This is used to provide cryptographic signing.
+secretKey: changeme
+
+yamcs-web:
+  tag : ASCLEPIOS V
+  logo : etc/logo.png
+  siteLinks:
+    - label: SOP List
+      url: https://docs.google.com/spreadsheets/d/10bzo_9uKJRIeZ1qC1bL4o_gg7-sEht-Poh6t9heCXIk/edit?gid=195315296#gid=195315296s/d/1icXf5wbcGN8gcz8PLHkEV6IasDvZckVcSsBtnycWjmY/edit?gid=0#gid=0
+      external: true
+    - label: COMMS
+      url: ts3server://mcc-comms.zap.cloud?password=Asclepios%C3%A9%C3%A0%C3%A9%28%40
+      external: true
+    - label: Shifts Plan
+      url: https://docs.google.com/spreadsheets/d/1dcqYi1YO3S1GzzjGFVprn0jCc030c7laT5TkOSi3bqA/edit?gid=0#gid=0
+      external: true
+  utc: true
+  
+buckets:
+    - name : Operations
+      maxSize : 200000000
+      maxObjects : 2000
+    - name : Experiments
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Issues
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Reports
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  EVA
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA1
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA2
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA3
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA4
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA5
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA6
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA7
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA8
+      maxSize : 200000000
+      maxObjects : 2000
+    - name :  Medical-AA9
+      maxSize : 200000000
+      maxObjects : 2000

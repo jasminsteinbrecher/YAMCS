@@ -1,0 +1,111 @@
+2026/04/01-13:47:23.750690 27d4 RocksDB version: 9.4.0
+2026/04/01-13:47:23.750806 27d4 Git sha b76c22b77906568020e471eeda76ec09b3f448b3
+2026/04/01-13:47:23.750824 27d4 Compile date 2024-09-22 15:34:32
+2026/04/01-13:47:23.750840 27d4 DB SUMMARY
+2026/04/01-13:47:23.750852 27d4 Host name (Env):  DESKTOP-2FDGA2I
+2026/04/01-13:47:23.750862 27d4 DB Session ID:  T6LNWQVZV9BV8TRMI0GV
+2026/04/01-13:47:23.751027 27d4 CURRENT file:  CURRENT
+2026/04/01-13:47:23.751047 27d4 IDENTITY file:  IDENTITY
+2026/04/01-13:47:23.751085 27d4 MANIFEST file:  MANIFEST-001662 size: 1014 Bytes
+2026/04/01-13:47:23.751099 27d4 SST files in yamcs-data\_global.rdb dir, Total Num: 7, files: 001626.sst 001629.sst 001635.sst 001646.sst 001652.sst 001655.sst 001660.sst 
+2026/04/01-13:47:23.751116 27d4 Write Ahead Log file in yamcs-data\_global.rdb: 001661.log size: 3014 ; 
+2026/04/01-13:47:23.751855 27d4                         Options.error_if_exists: 0
+2026/04/01-13:47:23.751869 27d4                       Options.create_if_missing: 1
+2026/04/01-13:47:23.751875 27d4                         Options.paranoid_checks: 1
+2026/04/01-13:47:23.751881 27d4             Options.flush_verify_memtable_count: 1
+2026/04/01-13:47:23.751886 27d4          Options.compaction_verify_record_count: 1
+2026/04/01-13:47:23.751891 27d4                               Options.track_and_verify_wals_in_manifest: 0
+2026/04/01-13:47:23.751896 27d4        Options.verify_sst_unique_id_in_manifest: 1
+2026/04/01-13:47:23.751901 27d4                                     Options.env: 000001EDEC28AD70
+2026/04/01-13:47:23.751906 27d4                                      Options.fs: WinFS
+2026/04/01-13:47:23.751911 27d4                                Options.info_log: 000001EDEC44D2E0
+2026/04/01-13:47:23.751917 27d4                Options.max_file_opening_threads: 16
+2026/04/01-13:47:23.751921 27d4                              Options.statistics: 0000000000000000
+2026/04/01-13:47:23.751927 27d4                               Options.use_fsync: 0
+2026/04/01-13:47:23.751931 27d4                       Options.max_log_file_size: 0
+2026/04/01-13:47:23.751936 27d4                  Options.max_manifest_file_size: 1073741824
+2026/04/01-13:47:23.751941 27d4                   Options.log_file_time_to_roll: 0
+2026/04/01-13:47:23.751946 27d4                       Options.keep_log_file_num: 10
+2026/04/01-13:47:23.751951 27d4                    Options.recycle_log_file_num: 0
+2026/04/01-13:47:23.751956 27d4                         Options.allow_fallocate: 1
+2026/04/01-13:47:23.751961 27d4                        Options.allow_mmap_reads: 0
+2026/04/01-13:47:23.751966 27d4                       Options.allow_mmap_writes: 0
+2026/04/01-13:47:23.751970 27d4                        Options.use_direct_reads: 0
+2026/04/01-13:47:23.751975 27d4                        Options.use_direct_io_for_flush_and_compaction: 0
+2026/04/01-13:47:23.751980 27d4          Options.create_missing_column_families: 0
+2026/04/01-13:47:23.751985 27d4                              Options.db_log_dir: 
+2026/04/01-13:47:23.751990 27d4                                 Options.wal_dir: 
+2026/04/01-13:47:23.751995 27d4                Options.table_cache_numshardbits: 6
+2026/04/01-13:47:23.752000 27d4                         Options.WAL_ttl_seconds: 0
+2026/04/01-13:47:23.752005 27d4                       Options.WAL_size_limit_MB: 0
+2026/04/01-13:47:23.752010 27d4                        Options.max_write_batch_group_size_bytes: 1048576
+2026/04/01-13:47:23.752017 27d4             Options.manifest_preallocation_size: 4194304
+2026/04/01-13:47:23.752024 27d4                     Options.is_fd_close_on_exec: 1
+2026/04/01-13:47:23.752031 27d4                   Options.advise_random_on_open: 1
+2026/04/01-13:47:23.752037 27d4                    Options.db_write_buffer_size: 0
+2026/04/01-13:47:23.752044 27d4                    Options.write_buffer_manager: 000001EDEC28A140
+2026/04/01-13:47:23.752050 27d4           Options.random_access_max_buffer_size: 1048576
+2026/04/01-13:47:23.752056 27d4                      Options.use_adaptive_mutex: 0
+2026/04/01-13:47:23.752062 27d4                            Options.rate_limiter: 0000000000000000
+2026/04/01-13:47:23.752108 27d4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2026/04/01-13:47:23.752120 27d4                       Options.wal_recovery_mode: 2
+2026/04/01-13:47:23.752126 27d4                  Options.enable_thread_tracking: 0
+2026/04/01-13:47:23.752133 27d4                  Options.enable_pipelined_write: 0
+2026/04/01-13:47:23.752139 27d4                  Options.unordered_write: 0
+2026/04/01-13:47:23.752145 27d4         Options.allow_concurrent_memtable_write: 1
+2026/04/01-13:47:23.752151 27d4      Options.enable_write_thread_adaptive_yield: 1
+2026/04/01-13:47:23.752157 27d4             Options.write_thread_max_yield_usec: 100
+2026/04/01-13:47:23.752164 27d4            Options.write_thread_slow_yield_usec: 3
+2026/04/01-13:47:23.752170 27d4                               Options.row_cache: None
+2026/04/01-13:47:23.752177 27d4                              Options.wal_filter: None
+2026/04/01-13:47:23.752183 27d4             Options.avoid_flush_during_recovery: 0
+2026/04/01-13:47:23.752189 27d4             Options.allow_ingest_behind: 0
+2026/04/01-13:47:23.752195 27d4             Options.two_write_queues: 0
+2026/04/01-13:47:23.752201 27d4             Options.manual_wal_flush: 0
+2026/04/01-13:47:23.752208 27d4             Options.wal_compression: 0
+2026/04/01-13:47:23.752214 27d4             Options.background_close_inactive_wals: 0
+2026/04/01-13:47:23.752220 27d4             Options.atomic_flush: 0
+2026/04/01-13:47:23.752226 27d4             Options.avoid_unnecessary_blocking_io: 0
+2026/04/01-13:47:23.752232 27d4                 Options.persist_stats_to_disk: 0
+2026/04/01-13:47:23.752238 27d4                 Options.write_dbid_to_manifest: 0
+2026/04/01-13:47:23.752244 27d4                 Options.log_readahead_size: 0
+2026/04/01-13:47:23.752250 27d4                 Options.file_checksum_gen_factory: Unknown
+2026/04/01-13:47:23.752257 27d4                 Options.best_efforts_recovery: 0
+2026/04/01-13:47:23.752263 27d4                Options.max_bgerror_resume_count: 2147483647
+2026/04/01-13:47:23.752269 27d4            Options.bgerror_resume_retry_interval: 1000000
+2026/04/01-13:47:23.752275 27d4             Options.allow_data_in_errors: 0
+2026/04/01-13:47:23.752281 27d4             Options.db_host_id: __hostname__
+2026/04/01-13:47:23.752287 27d4             Options.enforce_single_del_contracts: true
+2026/04/01-13:47:23.752306 27d4             Options.max_background_jobs: 8
+2026/04/01-13:47:23.752313 27d4             Options.max_background_compactions: -1
+2026/04/01-13:47:23.752319 27d4             Options.max_subcompactions: 1
+2026/04/01-13:47:23.752325 27d4             Options.avoid_flush_during_shutdown: 0
+2026/04/01-13:47:23.752331 27d4           Options.writable_file_max_buffer_size: 1048576
+2026/04/01-13:47:23.752337 27d4             Options.delayed_write_rate : 16777216
+2026/04/01-13:47:23.752343 27d4             Options.max_total_wal_size: 0
+2026/04/01-13:47:23.752349 27d4             Options.delete_obsolete_files_period_micros: 21600000000
+2026/04/01-13:47:23.752356 27d4                   Options.stats_dump_period_sec: 600
+2026/04/01-13:47:23.752362 27d4                 Options.stats_persist_period_sec: 600
+2026/04/01-13:47:23.752368 27d4                 Options.stats_history_buffer_size: 1048576
+2026/04/01-13:47:23.752374 27d4                          Options.max_open_files: 10000
+2026/04/01-13:47:23.752381 27d4                          Options.bytes_per_sync: 0
+2026/04/01-13:47:23.752387 27d4                      Options.wal_bytes_per_sync: 0
+2026/04/01-13:47:23.752393 27d4                   Options.strict_bytes_per_sync: 0
+2026/04/01-13:47:23.752399 27d4       Options.compaction_readahead_size: 2097152
+2026/04/01-13:47:23.752405 27d4                  Options.max_background_flushes: -1
+2026/04/01-13:47:23.752411 27d4 Options.daily_offpeak_time_utc: 
+2026/04/01-13:47:23.752422 27d4 Compression algorithms supported:
+2026/04/01-13:47:23.752437 27d4 	kZSTD supported: 1
+2026/04/01-13:47:23.752443 27d4 	kSnappyCompression supported: 1
+2026/04/01-13:47:23.752477 27d4 	kBZip2Compression supported: 0
+2026/04/01-13:47:23.752486 27d4 	kZlibCompression supported: 0
+2026/04/01-13:47:23.752493 27d4 	kLZ4Compression supported: 1
+2026/04/01-13:47:23.752499 27d4 	kXpressCompression supported: 0
+2026/04/01-13:47:23.752504 27d4 	kLZ4HCCompression supported: 1
+2026/04/01-13:47:23.752510 27d4 	kZSTDNotFinalCompression supported: 1
+2026/04/01-13:47:23.752517 27d4 Fast CRC32 supported: Supported on x86
+2026/04/01-13:47:23.752523 27d4 DMutex implementation: std::mutex
+2026/04/01-13:47:23.752529 27d4 Jemalloc supported: 0
+2026/04/01-13:47:23.753252 27d4 [WARN] [db\db_impl\db_impl_open.cc:2305] DB::Open() failed: IO error: Failed to create lock file: yamcs-data\_global.rdb/LOCK: The process cannot access the file because it is being used by another process.
+2026/04/01-13:47:23.753300 27d4 [db\db_impl\db_impl.cc:499] Shutdown: canceling all background work
+2026/04/01-13:47:23.753362 27d4 [db\db_impl\db_impl.cc:692] Shutdown complete
